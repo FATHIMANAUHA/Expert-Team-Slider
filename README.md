@@ -10,7 +10,7 @@ Moves the slider left or right based on the arrow clicked.This feature allows us
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding:0;
+            padding: 0;
             box-sizing: border-box;
         }
 
@@ -42,15 +42,14 @@ Moves the slider left or right based on the arrow clicked.This feature allows us
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             padding: 15px;
             margin-right: 15px;
-        
         }
 
-     .team-card img {
-          width: 100px; /* Adjust the size as needed */
-          height: 100px; /* Adjust the size as needed */
-          border-radius: 50%; /* Makes the image circular */
-          object-fit: cover; /* Ensures the image covers the area without distortion */
-          margin-bottom: 10px; /* Adds space between the image and the text }*/
+        .team-card img {
+            width: 50%;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
 
         .team-card h3 {
             font-size: 18px;
@@ -95,84 +94,116 @@ Moves the slider left or right based on the arrow clicked.This feature allows us
         }
 
         .slider-arrow.left {
-            left: 10px;
+            
+            left: 0px;
         }
 
         .slider-arrow.right {
-            right: 10px;
+            right: 0;
         }
-        
     </style>
 </head>
 <body>
-    <div class="slider-arrow left" onclick="moveSlide(-1)">&#10094;</div>
-    <div class="slider-arrow right" onclick="moveSlide(1)">&#10095;</div>
     <div class="team-section">
         <div class="slider-wrapper">
             <!-- Team Cards (Ensure 6 total cards here) -->
-        
             <div class="team-card">
-                <img src="https://projects.backb.ca/nmc/wp-content/uploads/2024/12/financial-consultant-planning-home-finances-with-his-client-.jpg" alt="Ritesh Kapoor">
-                <h3>Ritesh Kapoor</h3>
-                <div class="description">
-                    <span class="short-desc">FCA, (Consultant) - Handles statutory compliance matters He is a Qualified Chartered Accountant and commerce graduate from the University ofHe is a Qualified Chartered Accountant and commerce graduate from the University Handles statutory compliance matters He is a Qualified Chartered Accountant and commerce graduate from the University ofHe is a Qualified Chartered Accountant and commerce graduate from the University.</span>
-                </div>
-                </div>
-            <div class="team-card">
-                <img src="https://projects.backb.ca/nmc/wp-content/uploads/2024/12/financial-consultant-planning-home-finances-with-his-client-.jpg" alt="Ritesh Kapoor">
-                <h3>Ritesh Kapoor</h3>
-                <div class="description">
-                    <span class="short-desc">FCA, (Consultant) - Handles statutory compliance matters He is a Qualified Chartered Accountant and commerce graduate from the University of Delhi. Ritesh Kapoor handles statutory compliance matters related to the Mumbai office.</span>
-                </div>
-              
-            </div>
-            <div class="team-card">
-                <img src="https://projects.backb.ca/nmc/wp-content/uploads/2024/12/financial-consultant-planning-home-finances-with-his-client-.jpg" alt="Ritesh Kapoor">
+                <img src="https://projects.backb.ca/nmc/wp-content/uploads/2024/12/businesswoman-making-business-presentation-for-colleagues-in-modern-office-e1670796037246.jpg" alt="Ritesh Kapoor">
                 <h3>Ritesh Kapoor</h3>
                 <div class="description">
                     <span class="short-desc">FCA, (Consultant) - Handles statutory compliance matters.</span>
                     <span class="full-desc"> He is a Qualified Chartered Accountant and commerce graduate from the University of Delhi. Ritesh Kapoor handles statutory compliance matters related to the Mumbai office.</span>
                 </div>
-                
+                <a class="read-more" onclick="toggleDescription(this, true)">Read More</a>
+                <a class="read-less" onclick="toggleDescription(this, false)" style="display: none;">Read Less</a>
             </div>
             <div class="team-card">
-                <img src="https://projects.backb.ca/nmc/wp-content/uploads/2024/12/financial-consultant-planning-home-finances-with-his-client-.jpg" alt="Ritesh Kapoor">
+                <img src="https://projects.backb.ca/nmc/wp-content/uploads/2024/12/businesswoman-making-business-presentation-for-colleagues-in-modern-office-e1670796037246.jpg" alt="Ritesh Kapoor">
                 <h3>Ritesh Kapoor</h3>
                 <div class="description">
-                    <span class="short-desc">FCA, (Consultant) - Handles statutory compliance matters ied Chartered Accountant and commerce graduate from the University ofied Chartered Accountant and commerce graduate from the University of.</span>
+                    <span class="short-desc">FCA, (Consultant) - Handles statutory compliance matters.</span>
+                    <span class="full-desc"> He is a Qualified Chartered Accountant and commerce graduate from the University of Delhi. Ritesh Kapoor handles statutory compliance matters related to the Mumbai office.</span>
                 </div>
-                
+                <a class="read-more" onclick="toggleDescription(this, true)">Read More</a>
+                <a class="read-less" onclick="toggleDescription(this, false)" style="display: none;">Read Less</a>
             </div>
             <div class="team-card">
-                <img src="https://projects.backb.ca/nmc/wp-content/uploads/2024/12/financial-consultant-planning-home-finances-with-his-client-.jpg" alt="Ritesh Kapoor">
+                <img src="https://projects.backb.ca/nmc/wp-content/uploads/2024/12/businesswoman-making-business-presentation-for-colleagues-in-modern-office-e1670796037246.jpg" alt="Ritesh Kapoor">
                 <h3>Ritesh Kapoor</h3>
                 <div class="description">
-                    <span class="short-desc">FCA, (Consultant) - Handles statutory compliance matters  He is a Qualified Chartered Accountant and commerce graduate from the University of Delhi He is a Qualified Chartered Accountant and commerce graduate from the University of Delhi.</span>
+                    <span class="short-desc">FCA, (Consultant) - Handles statutory compliance matters.</span>
+                    <span class="full-desc"> He is a Qualified Chartered Accountant and commerce graduate from the University of Delhi. Ritesh Kapoor handles statutory compliance matters related to the Mumbai office.</span>
                 </div>
-                
+                <a class="read-more" onclick="toggleDescription(this, true)">Read More</a>
+                <a class="read-less" onclick="toggleDescription(this, false)" style="display: none;">Read Less</a>
             </div>
             <div class="team-card">
-                <img src="https://projects.backb.ca/nmc/wp-content/uploads/2024/12/financial-consultant-planning-home-finances-with-his-client-.jpg" alt="Ritesh Kapoor">
+                <img src="https://projects.backb.ca/nmc/wp-content/uploads/2024/12/businesswoman-making-business-presentation-for-colleagues-in-modern-office-e1670796037246.jpg" alt="Ritesh Kapoor">
                 <h3>Ritesh Kapoor</h3>
                 <div class="description">
-                    <span class="short-desc">FCA, (Consultant) - Handles statutory compliance matters He is a Qualified Chartered Accountant and commerce graduate from the UniversityHe is a Qualified Chartered Accountant and commerce graduate from the University.</span>
+                    <span class="short-desc">FCA, (Consultant) - Handles statutory compliance matters.</span>
+                    <span class="full-desc"> He is a Qualified Chartered Accountant and commerce graduate from the University of Delhi. Ritesh Kapoor handles statutory compliance matters related to the Mumbai office.</span>
                 </div>
-                
+                <a class="read-more" onclick="toggleDescription(this, true)">Read More</a>
+                <a class="read-less" onclick="toggleDescription(this, false)" style="display: none;">Read Less</a>
             </div>
             <div class="team-card">
-                <img src="https://projects.backb.ca/nmc/wp-content/uploads/2024/12/financial-consultant-planning-home-finances-with-his-client-.jpg" alt="Ritesh Kapoor">
+                <img src="https://projects.backb.ca/nmc/wp-content/uploads/2024/12/businesswoman-making-business-presentation-for-colleagues-in-modern-office-e1670796037246.jpg" alt="Ritesh Kapoor">
                 <h3>Ritesh Kapoor</h3>
                 <div class="description">
-                    <span class="short-desc">FCA, (Consultant) - Handles statutory compliance matters  He is a Qualified Chartered Accountant and commerce graduate from the University  He is a Qualified Chartered Accountant and commerce graduate from the University  He is a Qualified Chartered Accountant and commerce graduate from the University .</span>
+                    <span class="short-desc">FCA, (Consultant) - Handles statutory compliance matters.</span>
+                    <span class="full-desc"> He is a Qualified Chartered Accountant and commerce graduate from the University of Delhi. Ritesh Kapoor handles statutory compliance matters related to the Mumbai office.</span>
                 </div>
-                
+                <a class="read-more" onclick="toggleDescription(this, true)">Read More</a>
+                <a class="read-less" onclick="toggleDescription(this, false)" style="display: none;">Read Less</a>
+            </div>
+            <div class="team-card">
+                <img src="https://projects.backb.ca/nmc/wp-content/uploads/2024/12/businesswoman-making-business-presentation-for-colleagues-in-modern-office-e1670796037246.jpg" alt="Ritesh Kapoor">
+                <h3>Ritesh Kapoor</h3>
+                <div class="description">
+                    <span class="short-desc">FCA, (Consultant) - Handles statutory compliance matters.</span>
+                    <span class="full-desc"> He is a Qualified Chartered Accountant and commerce graduate from the University of Delhi. Ritesh Kapoor handles statutory compliance matters related to the Mumbai office.</span>
+                </div>
+                <a class="read-more" onclick="toggleDescription(this, true)">Read More</a>
+                <a class="read-less" onclick="toggleDescription(this, false)" style="display: none;">Read Less</a>
+            </div>
+            <div class="team-card">
+                <img src="https://projects.backb.ca/nmc/wp-content/uploads/2024/12/businesswoman-making-business-presentation-for-colleagues-in-modern-office-e1670796037246.jpg" alt="Ritesh Kapoor">
+                <h3>Ritesh Kapoor</h3>
+                <div class="description">
+                    <span class="short-desc">FCA, (Consultant) - Handles statutory compliance matters.</span>
+                    <span class="full-desc"> He is a Qualified Chartered Accountant and commerce graduate from the University of Delhi. Ritesh Kapoor handles statutory compliance matters related to the Mumbai office.</span>
+                </div>
+                <a class="read-more" onclick="toggleDescription(this, true)">Read More</a>
+                <a class="read-less" onclick="toggleDescription(this, false)" style="display: none;">Read Less</a>
             </div>
             <!-- Add more team cards here as needed -->
             <!-- Total of 6 cards to showcase -->
         </div>
-        <!-- Arrow Buttons -->       
+
+        <!-- Arrow Buttons -->
+        <div class="slider-arrow left" onclick="moveSlide(-1)">&#10094;</div>
+        <div class="slider-arrow right" onclick="moveSlide(1)">&#10095;</div>
     </div>
+
     <script>
+        function toggleDescription(element, showFull) {
+            const card = element.closest('.team-card');
+            const fullDesc = card.querySelector('.full-desc');
+            const readMore = card.querySelector('.read-more');
+            const readLess = card.querySelector('.read-less');
+    
+            if (showFull) {
+                fullDesc.style.display = 'inline'; // Show full description
+                readMore.style.display = 'none';  // Hide "Read More" button
+                readLess.style.display = 'inline'; // Show "Read Less" button
+            } else {
+                fullDesc.style.display = 'none'; // Hide full description
+                readMore.style.display = 'inline'; // Show "Read More" button
+                readLess.style.display = 'none';  // Hide "Read Less" button
+            }
+        }
+
         const sliderWrapper = document.querySelector('.slider-wrapper');
         const teamCards = Array.from(sliderWrapper.children); // Get all the team cards
         const cardWidth = 300; // Width of each card
@@ -182,7 +213,7 @@ Moves the slider left or right based on the arrow clicked.This feature allows us
         let currentIndex = 0;
 
         // Set the total width of the slider to accommodate all the cards
-        sliderWrapper.style.width = `${(cardWidth + gap) * teamCards.length - gap}px`;
+        sliderWrapper.style.width = ${(cardWidth + gap) * teamCards.length - gap}px;
 
         // Move slides with left or right arrows
         function moveSlide(direction) {
@@ -195,7 +226,7 @@ Moves the slider left or right based on the arrow clicked.This feature allows us
 
             // Move the wrapper to show the new slide
             sliderWrapper.style.transition = 'transform 0.5s ease-in-out';
-            sliderWrapper.style.transform = `translateX(${-currentIndex * (cardWidth + gap)}px)`;
+            sliderWrapper.style.transform = translateX(${-currentIndex * (cardWidth + gap)}px);
         }
 
         // Make sure we never go beyond the last set of 3 cards
@@ -203,8 +234,9 @@ Moves the slider left or right based on the arrow clicked.This feature allows us
             if (currentIndex >= teamCards.length - visibleCards) {
                 currentIndex = teamCards.length - visibleCards; // Stop at last set of cards
             }
-            sliderWrapper.style.transform = `translateX(${-currentIndex * (cardWidth + gap)}px)`;
+            sliderWrapper.style.transform = translateX(${-currentIndex * (cardWidth + gap)}px);
         }
+
         window.addEventListener('resize', updateSliderPosition);
     </script>
 </body>
