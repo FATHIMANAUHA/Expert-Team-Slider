@@ -45,17 +45,12 @@ Moves the slider left or right based on the arrow clicked.This feature allows us
         
         }
 
-        .team-card img {
-    width: 100px; /* Adjust the size as needed */
-    height: 100px; /* Adjust the size as needed */
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    margin-bottom: 10px; /* Adds space between the image and the text */
-}
-
-        
-     
-
+     .team-card img {
+          width: 100px; /* Adjust the size as needed */
+          height: 100px; /* Adjust the size as needed */
+          border-radius: 50%; /* Makes the image circular */
+          object-fit: cover; /* Ensures the image covers the area without distortion */
+          margin-bottom: 10px; /* Adds space between the image and the text }*/
 
         .team-card h3 {
             font-size: 18px;
